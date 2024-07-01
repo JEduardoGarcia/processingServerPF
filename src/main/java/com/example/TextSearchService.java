@@ -83,8 +83,9 @@ public class TextSearchService {
     // Método para obtener el estado del servidor
     public Map<String, Object> getStatus() {
         Map<String, Object> status = new HashMap<>();
-        status.put("message", "El servidor está en línea y funcionando.");
         status.put("cpuUsage", getCpuUsage());
+        status.put("message", "El servidor está en línea y funcionando.");
+        status.put("status", "online");
         return status;
     }
     

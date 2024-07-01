@@ -4,5 +4,6 @@ com/example/InvertedIndex.class
 com/example/WordLocation.class
 com/example/SearchResponse.class
 com/example/Application.class
+.DS_Store
 com/example/TextSearchController.class
 com/example/FileLoader.class
