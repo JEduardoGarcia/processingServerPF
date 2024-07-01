@@ -81,10 +81,13 @@ public class TextSearchService {
     }
 
     // Método para obtener el estado del servidor
-    public String getStatus() {
-        return "Server is running";
+    public Map<String, Object> getStatus() {
+        Map<String, Object> status = new HashMap<>();
+        status.put("message", "El servidor está en línea y funcionando.");
+        status.put("cpuUsage", getCpuUsage());
+        return status;
     }
-
+    
     // Método para obtener el uso de la CPU
     public double getCpuUsage() {
         OperatingSystemMXBean osBean = ManagementFactory.getOperatingSystemMXBean();

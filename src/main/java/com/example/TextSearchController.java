@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class TextSearchController {
@@ -34,7 +35,7 @@ public class TextSearchController {
     }
 
     @GetMapping("/status")
-    public String getStatus() {
+    public Map<String, Object> getStatus() {
         return textSearchService.getStatus();
     }
 
