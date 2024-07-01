@@ -1,0 +1,8 @@
+com/example/PhraseMatch.class
+com/example/TextSearchService.class
+com/example/InvertedIndex.class
+com/example/WordLocation.class
+com/example/SearchResponse.class
+com/example/Application.class
+com/example/TextSearchController.class
+com/example/FileLoader.class
