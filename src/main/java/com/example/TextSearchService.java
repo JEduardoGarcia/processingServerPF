@@ -86,6 +86,7 @@ public class TextSearchService {
         status.put("cpuUsage", getCpuUsage());
         status.put("message", "El servidor está en línea y funcionando.");
         status.put("status", "online");
+        status.put("cpuLoad", getCpuUsage());
         return status;
     }
     
